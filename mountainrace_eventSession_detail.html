@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=900">
+  <title>2026 원주 마운틴 레이스</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background-color: #fff; color: #1a1a1a; font-family: 'Pretendard', sans-serif; line-height: 1.6; word-break: keep-all; }
+    
+    .container { width: 900px; margin: 0 auto; background: #fff; overflow: hidden; }
+    .accent { color: #00d1ae; }
+    
+    /* Hero Section */
+    .hero { position: relative; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: #000; color: #fff; }
+    .hero-tags { font-size: 14px; letter-spacing: 4px; color: #00ffd4; margin-bottom: 20px; font-weight: 700; }
+    .hero-title { font-size: 64px; font-weight: 900; font-style: italic; line-height: 1.1; letter-spacing: -2px; }
+    .hero-concept { margin-top: 30px; font-size: 18px; color: #ccc; max-width: 650px; font-weight: 300; }
+
+    /* Section Common */
+    .section { padding: 90px 60px; border-bottom: 1px solid #eee; }
+    .section-label { color: #00d1ae; font-size: 14px; font-weight: 800; letter-spacing: 2px; margin-bottom: 15px; display: block; }
+    .section-title { font-size: 38px; font-weight: 800; margin-bottom: 40px; line-height: 1.2; color: #000; font-style: italic; }
+
+    /* Info List */
+    .info-list { margin-top: 10px; border-top: 2px solid #000; }
+    .info-item { display: flex; padding: 25px 0; border-bottom: 1px solid #eee; align-items: flex-start; }
+    .info-key { width: 180px; font-size: 15px; font-weight: 700; color: #999; letter-spacing: 1px; }
+    .info-val { font-size: 20px; font-weight: 600; flex: 1; color: #000; }
+    
+    /* Course Card */
+    .course-card { background: #111; border: 1px solid #222; padding: 40px; border-radius: 4px; color: #fff; }
+    
+    /* Timeline (가독성 강조) */
+    .timeline { position: relative; padding-left: 40px; margin-top: 10px; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: #ddd; }
+    .t-item { position: relative; margin-bottom: 40px; }
+    .t-item::after { content: ''; position: absolute; left: -43.5px; top: 8px; width: 8px; height: 8px; background: #00d1ae; border-radius: 50%; }
+    .t-time { font-size: 16px; font-weight: 800; color: #00d1ae; font-family: monospace; margin-bottom: 5px; }
+    .t-content { font-size: 20px; font-weight: 600; color: #000; }
+
+    /* Activity Card */
+    .activity-card { position: relative; height: 350px; border-radius: 8px; overflow: hidden; margin-bottom: 20px; display: flex; flex-direction: column; justify-content: flex-end; padding: 40px; }
+    .activity-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 10%, rgba(0,0,0,0) 60%); z-index: 1; }
+    .activity-content { position: relative; z-index: 2; color: #fff; }
+    .activity-tag { font-size: 12px; font-weight: 900; color: #00ffd4; letter-spacing: 2px; margin-bottom: 10px; display: block; }
+
+    /* Secret Area */
+    .secret-box { background: #f8f8f8; border: 1px solid #eee; padding: 50px; text-align: center; border-radius: 8px; }
+    .lock-icon { width: 40px; height: 40px; fill: #00d1ae; margin-bottom: 20px; }
+
+    footer { padding: 60px; text-align: center; opacity: 0.5; font-size: 11px; letter-spacing: 4px; color: #999; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <section class="section">
+      <span class="section-label">01. 레이스 정보</span>
+      <h2 class="section-title">RACE INFO</h2>
+            <div class="info-list">
+        <div class="info-item">
+          <div class="info-key">DATE</div>
+          <div class="info-val">2026.03.21 (토)</div>
+        </div>
+        <div class="info-item">
+          <div class="info-key">LOCATION</div>
+          <div class="info-val">강원 원주시 신림면 소야1길 72<br><span style="font-size:16px; color:#666;">피노키오숲, 대강당</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-key">ENTRY FEE</div>
+          <div class="info-val">12K Mountain Race : 30,000원</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="margin-bottom: 40px;">
+        <span class="section-label">02. 팀의 호흡이 기록이 되는 여정</span>
+        <h2 class="section-title" style="font-style: italic; font-size: 42px; margin-bottom: 0;">COURSE & RULE</h2>
+      </div>
+      
+      <div style="background: linear-gradient(135deg, #f0fffb 0%, #ffffff 100%); padding: 50px; border-radius: 12px; border: 1px solid #e0f2f1; color: #333; margin-bottom: 30px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,209,174,0.05);">
+        
+        <div style="position: absolute; top: 0; right: 0; background: #00d1ae; color: #fff; padding: 10px 25px; font-weight: 900; font-size: 14px; border-bottom-left-radius: 12px; letter-spacing: 1px; box-shadow: -2px 2px 10px rgba(0,0,0,0.05);">
+          선착순 50명 한정
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; margin-top: 10px;">
+          <div>
+            <h3 style="font-size: 14px; color: #00d1ae; letter-spacing: 2px; margin-bottom: 8px; font-weight: 800;">COURSE</h3>
+            <p style="font-size: 36px; font-weight: 700; font-style: italic; letter-spacing: -1px; color: #000;">12K MOUNTAIN</p>
+          </div>
+          <div style="text-align: right;">
+            <h3 style="font-size: 14px; color: #00d1ae; letter-spacing: 2px; margin-bottom: 8px; font-weight: 800;">TEAM</h3>
+            <p style="font-size: 24px; font-weight: 700; color: #000;">5인 1팀 / 총 10팀</p>
+          </div>
+        </div>
+        
+        <p style="font-size: 18px; color: #555; line-height: 1.7; margin-bottom: 40px; font-weight: 400;">
+          참가자별 사전 기록 매칭을 통해 구성된 팀원들과 함께 원주의 숲을 달립니다.<br>
+          개인의 속도보다 <strong style="color: #00d1ae;">팀 전체의 조화</strong>가 기록의 핵심이 됩니다.
+        </p>
+
+        <div style="border-top: 1px solid #e0f2f1; padding-top: 30px;">
+          <p style="font-size: 20px; font-weight: 700; color: #333;">
+            <span style="color: #00d1ae; margin-right: 15px; font-size: 14px; vertical-align: middle; font-weight: 800;">RESULT</span> 
+            팀 기록 합산 <span style="background: #e6f9f6; color: #00d1ae; padding: 4px 12px; border-radius: 4px; margin: 0 5px; border: 1px solid #b2ebf2;">평균 기록</span> 순위 산정
+          </p>
+        </div>
+      </div>
+
+      <div style="width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+        <img src="Images/c12k.png" alt="12K Course Map" style="width: 100%; display: block;">
+      </div>
+    </section>
+
+<section class="section">
+      <span class="section-label">03. 타임 테이블</span>
+      <h2 class="section-title">TIMETABLE</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-time">09:00 - 09:30</div>
+          <div class="t-content">프로그램 안내 (세션 및 팀 빌딩 가이드)</div>
+        </div>
+        
+        <div class="t-item" style="position: relative; margin-bottom: 50px;">
+          <div style="background: #f0fffb; padding: 30px; border-radius: 12px; border: 1px solid #00d1ae; box-shadow: 0 4px 20px rgba(0, 209, 174, 0.1);">
+            <div class="t-time" style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              09:30 - 12:00 
+              <span style="background: #00d1ae; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 800;">MAIN EVENT</span>
+            </div>
+<div class="t-content" style="font-size: 28px; font-weight: 700; color: #000; line-height: 1.2;">
+              12K RACE <span class="accent" style="color:#00d1ae;">START</span>
+            </div>
+            <div style="font-size: 15px; color: #666; margin-top: 8px; font-weight: 500;">
+              팀 단위 흐름 실험: 원주 마운틴 트레일 레이스
+            </div>
+          </div>
+        </div>
+        
+        <div class="t-item">
+          <div class="t-time">12:00 - 13:00</div>
+          <div class="t-content">Refresh Your Soles (팀 힐링 족욕 세션)</div>
+        </div>
+        <div class="t-item">
+          <div class="t-time">13:00 - 14:30</div>
+          <div class="t-content">Trail Feast (삼겹살 바베큐 다이닝)</div>
+        </div>
+        <div class="t-item" style="margin-bottom:0;">
+          <div class="t-time">14:30 - 15:00</div>
+          <div class="t-content">Secret Ceremony</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <span class="section-label">04. 달리기 그 이상의 회복</span>
+      <h2 class="section-title">ACTIVITIES</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 50px;">
+        
+        <div class="activity-group">
+          <div class="activity-card" style="background: url('Images/refeul.png') center/cover; margin-bottom: 0;"></div>
+          <div style="padding: 25px 5px;">
+            <span style="color: #00d1ae; font-size: 12px; font-weight: 800; letter-spacing: 1px;">REFEUL YOUR BODY</span>
+            <h3 style="font-size: 28px; margin: 8px 0; color: #000; font-weight: 800;">Trail Feast</h3>
+            <p style="color: #666; font-size: 17px; line-height: 1.6;">로컬 식재료로 준비된 고단백 삼겹살 바베큐 다이닝</p>
+          </div>
+        </div>
+
+        <div class="activity-group">
+          <div class="activity-card" style="background: url('Images/refresh.png') center/cover; margin-bottom: 0;"></div>
+          <div style="padding: 25px 5px;">
+            <span style="color: #00d1ae; font-size: 12px; font-weight: 800; letter-spacing: 1px;">REFRESH YOUR SOLES</span>
+            <h3 style="font-size: 28px; margin: 8px 0; color: #000; font-weight: 800;">Healing Session</h3>
+            <p style="color: #666; font-size: 17px; line-height: 1.6;">레이스 후 지친 발을 위한 차가운 계곡물과 족욕 리커버리</p>
+          </div>
+        </div>
+
+        <div class="activity-group">
+          <div class="activity-card" style="background: url('Images/recover.png') center/cover; margin-bottom: 0;"></div>
+          <div style="padding: 25px 5px;">
+            <span style="color: #00d1ae; font-size: 12px; font-weight: 800; letter-spacing: 1px;">RECOVER & RECONNECT</span>
+            <h3 style="font-size: 28px; margin: 8px 0; color: #000; font-weight: 800;">Team Socializing</h3>
+            <p style="color: #666; font-size: 17px; line-height: 1.6;">팀원들과 함께 나누는 레이스의 여운과 커뮤니티 타임</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="border-bottom:none;">
+      <span class="section-label">05. WINNER AWARDS</span>
+      <div class="secret-box">
+        <svg class="lock-icon" viewBox="0 0 24 24">
+          <path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3z"/>
+        </svg>
+        <h3 style="font-size: 24px; color: #000;"> SPECIAL REWARD</h3>
+        <p style="color:#666; margin-top:10px;">시상 내역은 대회 당일 현장에서 공개됩니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="margin-bottom: 40px;">
+        <span class="section-label">05. 유의사항 및 환불 규정</span>
+        <h2 class="section-title" style="font-style: italic; font-size: 42px; margin-bottom: 0;">POLICY</h2>
+      </div>
+
+
+
+      <div class="rule-card">
+        <h3 style="font-size: 22px; color: #000; margin-bottom: 15px; font-weight: 800; font-style: italic;">Refund Policy</h3>
+        <div style="padding: 25px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #00d1ae; margin-bottom: 25px;">
+          <p style="font-size: 18px; color: #444; line-height: 1.8; margin: 0;">
+            • <b>대회 2주 전까지:</b> <span style="color:#00d1ae; font-weight: 700;">100% 환불 가능</span> (접수 마감 여부 무관)<br>
+            • <b>대회 2주 전 ~ 당일:</b> 환불 불가 (기념품 배송으로 대체 가능)
+          </p>
+        </div>
+        
+        <ul style="list-style: none; padding: 0; color: #777; font-size: 15px; line-height: 1.7;">
+          <li style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+            <span style="position: absolute; left: 0; color: #00d1ae;">•</span>
+            <b style="color: #444;">양도 및 대리 참가:</b> 안전 관리 및 기록 혼선 방지를 위해 금지하며, 적발 시 실격 처리됩니다.
+          </li>
+          <li style="padding-left: 20px; position: relative;">
+            <span style="position: absolute; left: 0; color: #00d1ae;">•</span>
+            <b style="color: #444;">개인 사정 예외 없음:</b> 단순 변심, 부상 등 개인 일정으로 인한 2주 미만의 환불은 불가합니다.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>2026 WONJU MOUNTAIN RACE. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+  </div>
+</body>
+</html>

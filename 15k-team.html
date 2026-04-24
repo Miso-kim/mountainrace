@@ -646,6 +646,15 @@
       border-top: 1px solid var(--border);
     }
     @media (max-width: 600px) {
+      body { font-size: 13px; }
+      .section-title { font-size: 22px; }
+      .info-value { font-size: 14px; }
+      .tt-event strong { font-size: 13px; }
+      .tt-event { font-size: 12px; }
+      .tt-time { font-size: 11px; }
+      .team-card-value { font-size: 20px; }
+      .team-step-desc { font-size: 13px; }
+      .team-rule-desc { font-size: 13px; }
       .notice-label { width: 90px; min-width: 80px; font-size: 11px; }
       .notice-table td { padding: 14px 10px; font-size: 12px; }
       .gear-table { min-width: 560px; }
@@ -1015,6 +1024,65 @@
 </section>
 
 <!-- COURSE -->
+<!-- TEAM NOTICE -->
+<section id="team">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-header-top">
+        <span class="section-num">📢</span>
+        <span class="section-sub-kr">팀전 참가자 필수 안내</span>
+      </div>
+      <h2 class="section-title" style="font-style:normal;">Team Race Guide</h2>
+    </div>
+    <div class="team-block">
+      <div class="team-block-title">01 · 팀전 특별 혜택</div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card-label">할인 혜택</div>
+          <div class="team-card-value">인당 10만원</div>
+          <div class="team-card-sub">개인전 11만원 대비 약 10% 할인<br>4인 1팀 = 40만원</div>
+        </div>
+        <div class="team-card">
+          <div class="team-card-label">팀전 전용 시상</div>
+          <div class="team-card-value">3부문</div>
+          <div class="team-card-sub">남성 / 여성 / 혼성<br>혼성팀 성비 2:2 우선 시상</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-block">
+      <div class="team-block-title">02 · 접수 및 결제 프로세스</div>
+      <div class="team-steps">
+        <div class="team-step">
+          <div class="team-step-num">Step 1</div>
+          <div class="team-step-desc">팀장 1인이 대표로 본 페이지에서 결제를 완료합니다.<br><span class="team-em">옵션에 '팀명, 팀장 연락처' 기재 필수</span></div>
+        </div>
+        <div class="team-step">
+          <div class="team-step-num">Step 2</div>
+          <div class="team-step-desc">결제 완료 직후, 팀장 휴대폰으로 발송되는 안내 문자(SMS) 내 링크를 클릭합니다.</div>
+        </div>
+        <div class="team-step">
+          <div class="team-step-num">Step 3</div>
+          <div class="team-step-desc">연결된 구글 폼에 팀원 4명의 상세 정보를 입력하면 <span class="team-em">최종 접수가 확정</span>됩니다.</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-block">
+      <div class="team-block-title">⏱ 팀 레이스 핵심 규정</div>
+      <div class="team-rules">
+        <div class="team-rule-item">
+          <div class="team-rule-label">기록 기준</div>
+          <div class="team-rule-desc">팀원 4명 중 가장 늦게 들어오는 주자의 넷타임 기준</div>
+        </div>
+        <div class="team-rule-item">
+          <div class="team-rule-label">동반 피니시 권장</div>
+          <div class="team-rule-desc">팀원 간 기록 차이가 <span class="team-em">4분 이상</span> 벌어질 경우 팀 시상에서 제외됩니다. (개인 기록으로만 인정)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="course">
   <div class="section-inner">
     <div class="section-header">
@@ -1322,63 +1390,6 @@
 
 <!-- PARTICIPANT NOTICE -->
 
-<!-- TEAM NOTICE -->
-<section id="team">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-header-top">
-        <span class="section-num">📢</span>
-        <span class="section-sub-kr">팀전 참가자 필수 안내</span>
-      </div>
-      <h2 class="section-title" style="font-style:normal;">Team Race Guide</h2>
-    </div>
-    <div class="team-block">
-      <div class="team-block-title">01 · 팀전 특별 혜택</div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-card-label">할인 혜택</div>
-          <div class="team-card-value">인당 10만원</div>
-          <div class="team-card-sub">개인전 11만원 대비 약 10% 할인<br>4인 1팀 = 40만원</div>
-        </div>
-        <div class="team-card">
-          <div class="team-card-label">팀전 전용 시상</div>
-          <div class="team-card-value">3부문</div>
-          <div class="team-card-sub">남성 / 여성 / 혼성<br>혼성팀 성비 2:2 우선 시상</div>
-        </div>
-      </div>
-    </div>
-    <div class="team-block">
-      <div class="team-block-title">02 · 접수 및 결제 프로세스</div>
-      <div class="team-steps">
-        <div class="team-step">
-          <div class="team-step-num">Step 1</div>
-          <div class="team-step-desc">팀장 1인이 대표로 본 페이지에서 결제를 완료합니다.<br><span class="team-em">옵션에 '팀명, 팀장 연락처' 기재 필수</span></div>
-        </div>
-        <div class="team-step">
-          <div class="team-step-num">Step 2</div>
-          <div class="team-step-desc">결제 완료 직후, 팀장 휴대폰으로 발송되는 안내 문자(SMS) 내 링크를 클릭합니다.</div>
-        </div>
-        <div class="team-step">
-          <div class="team-step-num">Step 3</div>
-          <div class="team-step-desc">연결된 구글 폼에 팀원 4명의 상세 정보를 입력하면 <span class="team-em">최종 접수가 확정</span>됩니다.</div>
-        </div>
-      </div>
-    </div>
-    <div class="team-block">
-      <div class="team-block-title">⏱ 팀 레이스 핵심 규정</div>
-      <div class="team-rules">
-        <div class="team-rule-item">
-          <div class="team-rule-label">기록 기준</div>
-          <div class="team-rule-desc">팀원 4명 중 가장 늦게 들어오는 주자의 넷타임 기준</div>
-        </div>
-        <div class="team-rule-item">
-          <div class="team-rule-label">동반 피니시 권장</div>
-          <div class="team-rule-desc">팀원 간 기록 차이가 <span class="team-em">4분 이상</span> 벌어질 경우 팀 시상에서 제외됩니다. (개인 기록으로만 인정)</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="notice">
   <div class="section-inner">

@@ -138,7 +138,8 @@
     .notice-em { color: var(--red); font-weight: 700; }
 
     /* 환불 표 */
-    .refund-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+    .refund-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; table-layout: fixed; }
+    .refund-table th:first-child, .refund-table td:first-child { width: 35%; }
     .refund-table th {
       background: var(--bg-sub); padding: 10px 14px; text-align: left;
       font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
@@ -168,6 +169,7 @@
       .room-type-grid { grid-template-columns: 1fr; }
       .checkin-label { width: 80px; }
       .page-footer { padding: 32px 20px; flex-direction: column; }
+      #map > div { padding: 0 20px; }
       .accom-card { padding: 20px; }
       .checkin-box { padding: 20px; }
     }
@@ -179,7 +181,7 @@
 <div class="hero">
   <div class="hero-eyebrow">2026 WONJU MAMMUT MOUNTAIN RACE</div>
   <div class="hero-badge">Exclusive Offer · 참가자 전용</div>
-  <h1 class="hero-title">마운틴 레이스<br>공식 숙소 예약</h1>
+  <h1 class="hero-title">공식 숙소 예약</h1>
   <p class="hero-desc">대회장 내 위치한 피노키오숲 스테이를 오직 마운틴 레이스 참가자분들을 위한 특별 할인가로 오픈합니다. 대회 전날 최상의 컨디션을 준비하실 수 있도록 최적의 장소로 준비했습니다.<br><br>숙소와 캠핑장 구역별 위치를 지도를 통해 확인하신 후, 선호하시는 숙소를 예약하세요!</p>
 </div>
 

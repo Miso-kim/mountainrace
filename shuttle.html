@@ -55,21 +55,27 @@
     /* 히어로 */
     .hero {
       background: #f0f0ee;
-      color: var(--text);
+      color: #111;
       padding: 48px;
       margin-bottom: 0;
     }
     .hero-eyebrow {
       font-size: 11px; font-weight: 800; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+      text-transform: uppercase; color: #888; margin-bottom: 12px;
     }
     .hero-title {
       font-size: clamp(32px, 6vw, 56px);
       font-weight: 900;
-      line-height: 1; margin-bottom: 16px; color: var(--text);
+      line-height: 1; margin-bottom: 16px; color: #111;
     }
     .hero-desc {
-      font-size: 14px; color: var(--text-sub); line-height: 1.8; max-width: 560px;
+      font-size: 14px; color: #555; line-height: 1.8; max-width: 560px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .hero { background: var(--red); }
+      .hero-eyebrow { color: rgba(255,255,255,0.7); }
+      .hero-title { color: #fff; }
+      .hero-desc { color: rgba(255,255,255,0.85); }
     }
 
     /* 운행 정보 */

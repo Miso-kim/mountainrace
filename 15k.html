@@ -354,6 +354,31 @@
       margin-top: 14px;
       flex-wrap: wrap;
     }
+    .gpx-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1.5px solid var(--red);
+      color: var(--red);
+      font-family: 'Gotham', 'Pretendard', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .gpx-btn:hover {
+      background: var(--red);
+      color: #fff;
+    }
+    .gpx-btn svg {
+      flex-shrink: 0;
+    }
     .course-tag {
       font-size: 9px;
       font-weight: 700;
@@ -1038,6 +1063,14 @@
             <span class="course-tag">20K M</span>
             <span class="course-tag">UTMB INDEX</span>
           </div>
+          <a class="gpx-btn" href="Files/15k.gpx" download="15k.gpx">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            GPX Download
+          </a>
         </div>
       </div>
     </div>
